@@ -2,7 +2,7 @@
 ## script to analyze licor data acquired in class on October 6
 
 ## load packages
-# install.packages('plantecophys')
+# install.packages('plantecophys') # older package with similar functionality
 # library(plantecophys)
 install.packages('photosynthesis')
 library(photosynthesis)
@@ -38,7 +38,7 @@ aci_fit <- fit_aci_response(aci_data,
                                         PPFD = "Qin"))
 
 # 3. view fitted parameters
-aci_fit[[1]]
+aci_parameters <- aci_fit[[1]]
 
 # 4. view graph
 aci_fit[[2]]
